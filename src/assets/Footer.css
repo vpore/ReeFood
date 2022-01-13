@@ -1,0 +1,43 @@
+#footer {
+	background-color: #cb3362;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#footer div {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+	padding: 59px 0 13px;
+}
+#footer div p {
+	color: #FFFFFF;
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 15px;
+	margin: 0;
+	padding: 33px 0 50px;
+	text-align: center;
+	text-transform: none
+}
+#footer div .connect {
+	display: block;
+	height: 50px;
+	max-width: none;
+	overflow: hidden;
+	width: 370px;
+    padding: 0;
+}
+#footer div .connect li{
+	width: auto;
+	margin-left: 7%;
+	float: left;
+    font-size: large;
+    font-weight: bolder;
+    list-style-type: none;
+	font-family: 'Raleway';
+}
+#footer div .connect ul{
+    padding: 0;
+}

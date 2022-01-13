@@ -1,0 +1,94 @@
+#header {
+	background-color: #eeebec;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+#header div {
+	margin: 0 10px;
+	max-width: 1500px;
+	overflow: hidden;
+	padding: 0;
+}
+#header div img {
+	float: left;
+	margin: 5px 0px 10px 50px;
+	padding: 0;
+	width: 120px;
+	height: 100px;
+    position: relative;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+}
+#header div ul {
+	position: absolute;
+	float: left;
+	list-style: none outside none;
+	margin-left: 800px;
+	margin-top: 55px;
+	text-align: center;
+}
+#header div ul li {
+	display: inline-block;
+	*float: left; /* Needed for IE7 and old versions */
+	margin: 0 35px;
+	padding: 0;
+	position: relative;
+	width: auto;
+	color: #7a6666;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 15px;
+	margin-left: 10px;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+    text-decoration: none;
+	cursor: pointer;
+}
+#header div ul li:active{
+	color: #cb3362;
+}
+#header div ul li:hover, #header div ul li.menu:hover ul li a {
+	color: #c8c10d;
+}
+#header div ul li.menu {
+	min-height: 35px;
+	z-index: 80;
+}
+#header div ul li.menu ul {
+	display: block;
+	float: none;
+	left: -99999px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 24px;
+	width: 106px;
+	z-index: 90;
+}
+#header div ul li.menu:hover ul.primary, #header div ul li.menu ul#selected.primary {
+	left: -30px;
+}
+#header div ul li.menu:hover ul.secondary, #header div ul li.menu ul#selected.secondary {
+	left: -27px;
+}
+#header div ul li.menu ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+.loginBtn{
+	border-radius: 50px;
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	font-family: 'Raleway';
+	font-weight: bolder;
+	margin-left: 1200px;
+	margin-top: 35px;
+	cursor: pointer;
+}
