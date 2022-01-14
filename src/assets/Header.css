@@ -31,7 +31,7 @@
 	margin-top: 55px;
 	text-align: center;
 }
-#header div ul li {
+.navItem {
 	display: inline-block;
 	*float: left; /* Needed for IE7 and old versions */
 	margin: 0 35px;
@@ -49,10 +49,10 @@
     text-decoration: none;
 	cursor: pointer;
 }
-#header div ul li:active{
+.navItem:active{
 	color: #cb3362;
 }
-#header div ul li:hover, #header div ul li.menu:hover ul li a {
+.navItem:hover, #header div ul li.menu:hover ul li a {
 	color: #c8c10d;
 }
 #header div ul li.menu {
