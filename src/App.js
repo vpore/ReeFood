@@ -4,7 +4,9 @@ import Header from './components/Header';
 import DashHeader from './components/DashHeader';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import Expiry from './pages/Expiry';
 import Recipe from './pages/Recipe';
+import Recommendations from './pages/Recommendations';
 import Footer from './components/Footer';
 import { useEffect, useState } from "react";
 
@@ -53,9 +55,19 @@ function App() {
           <Dashboard/>
         </Route>
 
+        <Route path='/expiry'>
+          <DashHeader/>
+          <Expiry/>
+        </Route>
+
         <Route path='/recipe'>
           <DashHeader/>
           <Recipe/>
+        </Route>
+
+        <Route path='/recom'>
+          <DashHeader/>
+          <Recommendations/>
         </Route>
 
       </Switch>
