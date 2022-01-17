@@ -3,7 +3,7 @@ import "../assets/Header.css";
 import logo from "../images/logo.png";
 import Login from "../pages/Login";
 
-const showLogin = () => {
+const showLogin = () => { 
   document.getElementById("id01").style.display = "block";
   
   var modal = document.getElementById("id01");
