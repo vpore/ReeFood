@@ -4,7 +4,7 @@ import useHttp from '../hooks/use-http';
 import { getAllRecipes } from '../lib/api';
 import { useEffect } from "react";
 
-const Recipe = (props) => {
+const Recipe = () => {
 
     const {sendRequest, status, data: loadedAllRecipes, error} = useHttp(
         getAllRecipes,
@@ -20,6 +20,7 @@ const Recipe = (props) => {
             <h1>Loading...</h1>
         );
     }
+    console.log(error);
 
     var recipeTiles = [];
     for(let eachRecData of loadedAllRecipes){
