@@ -18,8 +18,6 @@ const RecipeInfo = () => {
         sendRequest(recipeid);
     }, [sendRequest, recipeid]);
 
-    console.log(loadedRecipe);
-
     if(status === 'pending'){
         return(
             <h1>Loading...</h1>
