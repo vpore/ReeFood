@@ -1,21 +1,36 @@
 import { NavLink } from "react-router-dom";
+import '../assets/Dashboard.css';
 
-import '../assets/Header.css';
-import logo from "../images/logo.png";
+// import '../assets/Header.css';
+import logo from "../images/csilogo.png";
 
 const DashHeader = () => {
-    return(
-        <div id="header">
-        <div>
-            <img src={logo} alt="logo"/>
-            <ul id="navigation">
-                <NavLink to='/dashboard' className='navItem'>Dashboard</NavLink>
-                <NavLink to='/expiry' className='navItem'>Expiry</NavLink>
-                <NavLink to='/recipe' className='navItem'>Food Recipes</NavLink>
-                <NavLink to='/recom' className='navItem'>Recommendations</NavLink>
+    return (
+        <nav className="navbar">
+            <div className="nav">
+                <img src={logo} className="brand-logo" alt=""></img>
+                <div className="nav-items">
+                    {/* for Recipies page search bar  */}
+                    {/* <div className="search">
+                        <input type="text" className="search-box" placeholder="search items , recipes , and many more..."></input>
+                        <a href="search.html">
+                        <button className="search-btn">search</button>
+                        </a>
+                    </div> */}
+                    {/* <a href="signup.html"> */}
+                    {/* <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="user login"></img> */}
+                    {/* </a> */}
+                </div>
+            </div>
+            <ul class="links-container">
+                <NavLink to='/dashboard' className="link-item link">Home</NavLink>
+                <NavLink to='/aboutus' className="link-item link">About Us</NavLink>
+                <NavLink to='/recipe' className="link-item link">Recipies</NavLink>
+                <NavLink to='/expiry' className="link-item link">Items approaching Expiry</NavLink>
+                <NavLink to='/feedback' className="link-item link">Feedback</NavLink>
+                <NavLink to='/recommendations' className="link-item link">Recommendations</NavLink>
             </ul>
-        </div>
-        </div>
+        </nav>
     );
 };
 

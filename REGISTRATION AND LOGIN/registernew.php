@@ -99,7 +99,7 @@ mysqli_close($conn);
 </head>
 
 <body>
-    <div class="panel">
+    <div class="panel" id="id01">
 
         
         <form action="" method="post">
@@ -120,6 +120,7 @@ mysqli_close($conn);
              
            <button type="submit" id="button">Register</button>
         </form>
+        <p>If you have an existing acc, <a href="login.php">LogIn here</a></p>
     </div> 
        
 
