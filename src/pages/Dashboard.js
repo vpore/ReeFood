@@ -5,13 +5,14 @@ const Dashboard = () => {
             {/* <!-- hero section-- > */}
             <header className="hero-section">
                 <div className="content">
-                    {/* <img src="/logo.jpeg" className="logo" alt=""></img> */}
+                    {/* <img src="/logo.jpeg" classNameName="logo" alt=""></img> */}
                     <p className="heading">Eat.Think.Safe</p>
                     {/* <br> */}
                     <p className="sub-heading">Eat Everything You Buy</p>
                 </div>
             </header>
             {/* <h1>Hello!</h1> */}
+
             <div>
                 <h3>Items in your Fridge</h3>
                 <ul>
