@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
     else{
         $sql = "SELECT id FROM users WHERE username = ?";
         $stmt = mysqli_prepare($conn, $sql);
-        if($stmt)
         {
             mysqli_stmt_bind_param($stmt, "s", $param_username);
 
