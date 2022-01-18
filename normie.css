@@ -1,0 +1,17 @@
+.inradio{
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 1.5em;
+}
+.item{
+    padding-right: 1em;
+}
+.main1{
+    display:flex;
+    align-items: flex-start;
+}
+
+.img{
+    width: 300px;
+    height: 200px;
+}
