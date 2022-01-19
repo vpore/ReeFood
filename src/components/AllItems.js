@@ -9,9 +9,7 @@ const AllItems = () => {
         getAllItems,
         true 
       );
-    console.log(loadedItems)
       
-
       useEffect(() => {
         sendRequest();
       }, [sendRequest]);

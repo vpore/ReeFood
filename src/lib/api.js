@@ -41,15 +41,15 @@ export async function addItem(itemData) {
     return null;
 };
 
-export async function getAllRecipes() {
-    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=eggs,onions,tomato&number=10&ranking=1&ignorePantry=true&apiKey=4c125a07172c45129b5e2b4e707f465f`);
+export async function getAllRecipes(ingredients) {
+    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=${ingredients}&number=10&ranking=1&ignorePantry=true&apiKey=4c125a07172c45129b5e2b4e707f465f`);
 
     if(!response.ok){
         throw new Error("Could not fetch Data!");
     }
 
     const data = await response.json();
-
+    
     const loadedAllRecipes = [];
 
     for(const key in data){
@@ -66,7 +66,7 @@ export async function getAllRecipes() {
 }
 
 export async function getSingleRecipe(recipeid) {
-    const response = await fetch(`${API_DOMAIN}/recipes/${recipeid}/information?includeNutrition=false&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const response = await fetch(`${API_DOMAIN}/recipes/${recipeid}/information?includeNutrition=false&apiKey=4c125a07172c45129b5e2b4e707f465f`);
     const data = await response.json();
 
     if(!response.ok){
@@ -100,13 +100,13 @@ export async function getSingleRecipe(recipeid) {
 };
 
 export async function getNutritionLabel(recipeid) {
-    const url = `${API_DOMAIN}/recipes/${recipeid}/nutritionLabel.png?showOptionalNutrients=false&showZeroValues=false&showIngredients=false&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`;
+    const url = `${API_DOMAIN}/recipes/${recipeid}/nutritionLabel.png?showOptionalNutrients=false&showZeroValues=false&showIngredients=false&apiKey=4c125a07172c45129b5e2b4e707f465f`;
    
     return url;
 };
 
 export async function getRandomTrivia() {
-    const response = await fetch(`${API_DOMAIN}/food/trivia/random?apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const response = await fetch(`${API_DOMAIN}/food/trivia/random?apiKey=4c125a07172c45129b5e2b4e707f465f`);
     const data = await response.json();
 
     const trivia = data.text;
@@ -114,7 +114,7 @@ export async function getRandomTrivia() {
 };
 
 export async function getQuickAns(ques) {
-    const response = await fetch(`${API_DOMAIN}/recipes/quickAnswer?q=${ques}&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const response = await fetch(`${API_DOMAIN}/recipes/quickAnswer?q=${ques}&apiKey=4c125a07172c45129b5e2b4e707f465f`);
     const data = await response.json();
 
     const ans = data.answer;
@@ -122,7 +122,7 @@ export async function getQuickAns(ques) {
 };
 
 export async function getIngSub(ing) {
-    const response = await fetch(`${API_DOMAIN}/food/ingredients/substitutes?ingredientName=${ing}&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const response = await fetch(`${API_DOMAIN}/food/ingredients/substitutes?ingredientName=${ing}&apiKey=4c125a07172c45129b5e2b4e707f465f`);
     const data = await response.json();
     let subsArr = [];
     let allSubs = data.substitutes;

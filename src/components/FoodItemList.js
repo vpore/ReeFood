@@ -7,6 +7,7 @@ const FoodItemList = (props) => {
           food.push(eachItem.foodItem);
           food.push(<br/>);
       });
+    
     return(
         <>
             <div>{food}</div>

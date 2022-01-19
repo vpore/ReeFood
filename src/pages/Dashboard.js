@@ -54,14 +54,6 @@ const Dashboard = () => {
 
       <NewItem/>
 
-      {/* <div>
-        <h3>Add Food Info</h3>
-        <label htmlFor="foodItem">Add Food Item</label>
-        <input type="text" placeholder="Food Item" name="foodItem" />
-        <label>Add its Expiry Date</label>
-        <input type="date" name="expiryDate" />
-        <button className="btn btn-danger">Add Item</button>
-      </div> */}
       <div>
         <h3>Food items that are expiring within 10 days</h3>
         <ul>
@@ -71,8 +63,8 @@ const Dashboard = () => {
         </ul>
         <button className="btn btn-danger">View More</button>
       </div>
-      {/* <Trivia /> */}
-      {/* <div>
+      <Trivia />
+      <div>
         <h3>Ask any food related question...</h3>
         <input
           type="text"
@@ -81,8 +73,8 @@ const Dashboard = () => {
           onChange={quesChangeHandler}
         ></input>
         <p>{ans}</p>
-      </div> */}
-      {/* <IngredientSubstitute /> */}
+      </div>
+      <IngredientSubstitute />
 
     </>
   );

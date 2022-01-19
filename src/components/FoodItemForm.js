@@ -56,7 +56,7 @@ const FoodItemForm = (props) => {
           </div>
           <div className={classes.control}>
             <label htmlFor='text'>Food Item</label>
-            <textarea id='text' rows='5' ref={textInputRef}></textarea>
+            <input type='text' id='text' ref={textInputRef}></input>
           </div>
           <div className={classes.actions}>
             <button onClick={finishEnteringHandler} className='btn btn-success'>Add Item</button>
