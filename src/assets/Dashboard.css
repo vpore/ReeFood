@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Mochiy+Pop+P+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&display=swap');
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
@@ -49,15 +50,17 @@
 }
 
 .navbar{
+    padding: 0;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     background-color: white;
+    height: 90px
 }
 
 .nav{
-    padding: 10px 10vw;
+    padding: 0;
     display: flex;
     width: 20px;
     justify-content: space-between;
@@ -65,6 +68,7 @@
 
 .brand-logo{
     height: 80px;
+    position:absolute
 }
 
 .nav-items{
@@ -122,13 +126,15 @@
     padding: 10px 10vw;
     justify-content: center;
     list-style: none;/*to remove bullets from list*/
-    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    position: absolute;
+    margin-top: 45px
 }
 
 .link{
     text-transform: capitalize;
     padding: 0 10px;
-    margin: 0 5px;
+    margin-bottom: 0;
     text-decoration: none;/*remove underline*/
     color:black;
     opacity: 0.5;
@@ -137,6 +143,137 @@
 
 .link:hover{
     opacity: 1;
+}
+
+.logoutBtn{
+    z-index: 1;
+    margin-left: 1350px;
+    margin-top: 30px;
+}
+.hello1{
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-image: url(https://wallpaper.dog/large/10824473.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    /* filter: blur(4px); */
+}
+.hello{
+    margin: 20px;
+    /* text-align: center; */
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color:black;
+    text-decoration: wavy;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+    opacity: 1;
+    
+}
+.eggsitem{
+    width: 40%;
+    height: 40%;
+}
+.one{
+    width: 40%;
+    height: 40%;
+    /* position: relative; */
+}
+.hello1 .two{
+    width: 40%;
+
+} 
+.hello1 .fridgeitem{
+    font-size: 20px;
+    line-height: 20px;
+    margin: 5px;
+    
+    /* text-transform: capitalize; */
+}
+
+.hello1{
+    width: 60%;
+    padding: 20px 20px;
+    display: flex;
+}
+
+.textexpiry{
+    margin: 5px;
+
+}
+
+.textitem{
+    margin: 5px;
+
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 8px 20px;
+    margin: 8px 6px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+::-webkit-datetime-edit { padding: 10px; }
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+/* ::-webkit-calendar-picker-indicator { background: yellow; } */
+
+input[type=date] {
+    /* width: 50%;
+    padding: 8px 20px; */
+    margin: 8px 6px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.add{
+    margin: 20px;
+    /* text-align: center; */
+    /* font-family: 'Bakbak One', cursive; */
+    font-family: 'Mochiy Pop P One', sans-serif;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Fjalla One', sans-serif; */
+    color:black;
+    text-decoration: wavy;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.addA{
+    font-size: 20px;
+    /* font-family: 'Fjalla One', sans-serif; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Bakbak One', cursive;
+    /* font-family: 'Mochiy Pop P One', sans-serif; */
+    margin: 20px;
+}
+.date{
+    font-size: 20px;
+    font-family: 'Bakbak One', cursive;
+    margin: 20px;
+
+}
+/* .btn {
+    margin: 20px;
+} */
+
+.trivia{
+    margin: 20px;
 }
 
 

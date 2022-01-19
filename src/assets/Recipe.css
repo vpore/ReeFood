@@ -1,0 +1,40 @@
+.recipe {
+    display: block;
+}
+img {
+height: 15rem;
+border-radius: var(--borderRadius);
+margin-bottom: 1rem;
+}
+.recipe h5 {
+margin-bottom: 0;
+margin-top: 0.25rem;
+line-height: 1;
+color: var(--grey-700);
+text-decoration: none;
+}
+.recipe p {
+margin-bottom: 0;
+line-height: 1;
+color: var(--grey-500);
+margin-top: 0.5rem;
+letter-spacing: var(--letterSpacing);
+}
+.recipes-list {
+display: grid;
+gap: 2rem 1rem;
+padding-bottom: 3rem;
+}
+.page {
+width: 90vw;
+max-width: var(--max-width);
+margin: 0 auto;
+}
+.page {
+padding-top: 2rem;
+min-height: calc(100vh - (6rem + 4rem));
+}
+.recipes-container {
+    display: grid;
+    gap: 2rem 1rem;
+}

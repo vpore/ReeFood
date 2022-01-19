@@ -24,6 +24,11 @@ const Header = () => {
             <img src={logo} alt="logo" />
           </NavLink>
           <button className="btn btn-outline-danger loginBtn">
+            <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php" >
+              Register
+            </a>
+          </button>
+          <button className="btn btn-outline-danger loginBtn">
             <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
               LogIn
             </a>

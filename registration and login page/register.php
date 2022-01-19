@@ -112,7 +112,7 @@ mysqli_close($conn);
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="register.php">Register</a>
       </li>
       <li class="nav-item">
@@ -120,7 +120,7 @@ mysqli_close($conn);
       </li>
       <li class="nav-item">
         <a class="nav-link" href="logout.php">Logout</a>
-      </li>
+      </li> -->
 
       
      
