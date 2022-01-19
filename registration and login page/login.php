@@ -5,7 +5,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: http://localhost:3000/dashboard");
+    header("location: login.php");
     exit;
 }
 require_once "config.php";

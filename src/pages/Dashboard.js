@@ -1,5 +1,10 @@
 import "../assets/Dashboard.css"
-
+import eggs from "../images/eggs.jpg";
+import cauliflower from "../images/cauliflower.jpg";
+import paneer from "../images/paneer.jpg";
+import curd from "../images/curd.jpg";
+import spinach from "../images/spinach.jpg";
+import capsicum from "../images/capsicum.jpg";
 import useHttp from '../hooks/use-http';
 import { getQuickAns } from '../lib/api';
 import { useEffect, useState } from "react";
@@ -49,10 +54,10 @@ const Dashboard = () => {
 
       <div>
         <h3>Items in your Fridge</h3>
-        <AllItems/>
+        <AllItems />
       </div>
 
-      <NewItem/>
+      <NewItem />
 
       <div>
         <h3>Food items that are expiring within 10 days</h3>
@@ -68,7 +73,7 @@ const Dashboard = () => {
         <h3>Ask any food related question...</h3>
         <input
           type="text"
-          placeholder="Eg: How much vitamin c is in 2 apples?"
+          placeholder="Eg: How much vitamin C is present in Apples?"
           value={enteredQues}
           onChange={quesChangeHandler}
         ></input>

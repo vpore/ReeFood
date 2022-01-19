@@ -10,7 +10,6 @@ const Header = () => {
           <NavLink to="/home" className="logo">
             <img src={logo} alt="logo" />
           </NavLink>
-          
           <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php" >
             <button className="btn btn-outline-danger regiBtn">
               Register
@@ -21,7 +20,6 @@ const Header = () => {
               LogIn
             </button>
           </a>
-          
         </div>
       </div>
     </>
