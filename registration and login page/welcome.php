@@ -63,6 +63,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 <div class="container mt-4">
 <h3><?php echo "Welcome ". $_SESSION['username']?>! You can now use this website</h3>
 <hr>
+<a href="http://localhost:3000/dashboard">click here</a>
 
 </div>
 

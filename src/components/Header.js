@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../assets/Header.css";
 import logo from "../images/logo.png";
 
-const showLogin = () => { 
+const showLogin = () => {
 
   /*document.getElementById("id01").style.display = "block";
   
@@ -23,11 +23,11 @@ const Header = () => {
           <NavLink to="/home" className="logo">
             <img src={logo} alt="logo" />
           </NavLink>
-            <button className="btn btn-outline-danger loginBtn">
-              <a target="_blank" href="http://localhost/eatz/REGISTRATION%20AND%20LOGIN/registernew.php" >
-                LogIn
-              </a>
-            </button>
+          <button className="btn btn-outline-danger loginBtn">
+            <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
+              LogIn
+            </a>
+          </button>
         </div>
       </div>
     </>
