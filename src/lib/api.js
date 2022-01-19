@@ -1,7 +1,7 @@
-const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a
+const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a - 4c125a07172c45129b5e2b4e707f465f
 
 export async function getAllRecipes() {
-    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=eggs,onions,tomato&number=10&ranking=1&ignorePantry=true&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=eggs,onions,tomato&number=10&ranking=1&ignorePantry=true&apiKey=4c125a07172c45129b5e2b4e707f465f`);
 
     if(!response.ok){
         throw new Error("Could not fetch Data!");

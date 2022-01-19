@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../assets/Recipe.css';
 import useHttp from '../hooks/use-http';
 import { getAllRecipes } from '../lib/api';
 import { useEffect } from "react";
@@ -17,7 +17,7 @@ const Recipe = () => {
 
     if(status === 'pending'){
         return(
-            <h1>Loading...</h1>
+            <h1>Loading...</h1> 
         );
     }
     console.log(error);
@@ -25,17 +25,24 @@ const Recipe = () => {
     var recipeTiles = [];
     for(let eachRecData of loadedAllRecipes){
         recipeTiles.push(
-            <div>
-                <img src={eachRecData.image} alt="Foood"/>
-                <Link to={`/recipe/recipeinfo/${eachRecData.id}`}>{eachRecData.title}</Link>
-            </div>
+            
+                <Link to={`/recipe/recipeinfo/${eachRecData.id}`} className="recipe">
+                    <img src={eachRecData.image} alt="Foood" className="img recipe-img"/>
+                    <h5>{eachRecData.title}</h5>
+                </Link>
+            
             
         );
     }
 
     return (
         <>
-            <div>{recipeTiles}</div>
+            <main className="page">
+                <section className="recipes-container">
+                    <div className="recipes-list">{recipeTiles}</div>
+                </section>
+            </main>
+                
         </>
     );
     

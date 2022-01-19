@@ -49,15 +49,17 @@
 }
 
 .navbar{
+    padding: 0;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     background-color: white;
+    height: 90px
 }
 
 .nav{
-    padding: 10px 10vw;
+    padding: 0;
     display: flex;
     width: 20px;
     justify-content: space-between;
@@ -65,6 +67,7 @@
 
 .brand-logo{
     height: 80px;
+    position:absolute
 }
 
 .nav-items{
@@ -122,13 +125,15 @@
     padding: 10px 10vw;
     justify-content: center;
     list-style: none;/*to remove bullets from list*/
-    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    position: absolute;
+    margin-top: 45px
 }
 
 .link{
     text-transform: capitalize;
     padding: 0 10px;
-    margin: 0 5px;
+    margin-bottom: 0;
     text-decoration: none;/*remove underline*/
     color:black;
     opacity: 0.5;
@@ -139,4 +144,8 @@
     opacity: 1;
 }
 
-
+.logoutBtn{
+    z-index: 1;
+    margin-left: 1350px;
+    margin-top: 30px;
+}
