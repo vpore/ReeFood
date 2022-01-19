@@ -10,6 +10,8 @@ import { getQuickAns } from '../lib/api';
 import { useEffect, useState } from "react";
 import Trivia from "./Trivia";
 import IngredientSubstitute from "./IngredientSubstitute";
+import NewItem from "../components/NewItem";
+import AllItems from "../components/AllItems";
 
 const Dashboard = () => {
   const [enteredQues, setEnteredQues] = useState('');
@@ -50,122 +52,22 @@ const Dashboard = () => {
       </header>
       {/* <h1>Hello!</h1> */}
 
-      <div className="DashSection2">
-        <h3 className="hello">Items in your Fridge</h3>
-        <section className="hello1">
-          <div className="one">
-            <img src={eggs} className="eggsitem" alt=""></img>
-          </div>
-          <div className="two">
-            <li className="fridgeitem">Eggs</li>
-            <a href="#">
-              <li className="fridgeitem">Eggs Recipies</li>
-            </a>
-          </div>
-        </section>
-
-        <section className="hello1">
-          <div className="one">
-            <img src={paneer} className="eggsitem" alt=""></img>
-          </div>
-          <div className="two">
-            <li className="fridgeitem">Panner</li>
-            <a href="#">
-              <li className="fridgeitem">Panner Recipies</li>
-            </a>
-
-          </div>
-        </section>
-
-        <section className="hello1">
-          <div className="one">
-            <img src={cauliflower} className="eggsitem" alt=""></img>
-          </div>
-          <div className="two">
-            <li className="fridgeitem">Cauliflower</li>
-            <a href="#">
-              <li className="fridgeitem">Cauliflower Recipies</li>
-            </a>
-          </div>
-        </section>
-
-        {/* <section className="hello2">
-
-        </section>
-
-        <section className="hello3">
-
-        </section> */}
-      </div>
       <div>
-        <h3 className="add">Add Food Info</h3>
-        <div className="textitem">
-          <label className="addA" htmlFor="foodItem">Add Food Item  :  </label>
-          <input type="text" placeholder="Food Item" name="foodItem" />
-        </div>
-
-        <div className="textexpiry">
-          <label className="date">Add its Expiry Date  :  </label>
-          <input type="date" name="expiryDate" />
-        </div>
-
-        <button className="btn btn-danger">Add Item</button>
+        <h3>Items in your Fridge</h3>
+        <AllItems />
       </div>
 
-      <div className="DashSection2">
-        <h3 className="hello">Food items that are expiring within 10 days</h3>
-        <section className="hello1">
-          <div className="one">
-            <img src={curd} className="eggsitem" alt=""></img>
-          </div>
-          <div className="two">
-            <li className="fridgeitem">Curd</li>
-            <a href="#">
-              <li className="fridgeitem">Curd Recipies</li>
-            </a>
-          </div>
-        </section>
-
-        <section className="hello1">
-          <div className="one">
-            <img src={spinach} className="eggsitem" alt=""></img>
-          </div>
-          <div className="two">
-            <li className="fridgeitem">Spinach</li>
-            <a href="#">
-              <li className="fridgeitem">Spinach Recipies</li>
-            </a>
-
-          </div>
-        </section>
-
-        <section className="hello1">
-          <div className="one">
-            <img src={capsicum} className="eggsitem" alt=""></img>
-          </div>
-          <div className="two">
-            <li className="fridgeitem">Capsicum</li>
-            <a href="#">
-              <li className="fridgeitem">Capsicum Recipies</li>
-            </a>
-          </div>
-
-        </section>
-
-        <div className="viewmore">
-          <button className="btn btn-danger">View More</button>
-        </div>
-
-        {/* <section className="hello2">
-
-        </section>
-
-        <section className="hello3">
-
-        </section> */}
-      </div>
+      <NewItem />
 
       {/* <div>
+        <h3>Add Food Info</h3>
+        <label htmlFor="foodItem">Add Food Item</label>
+        <input type="text" placeholder="Food Item" name="foodItem" />
+        <label>Add its Expiry Date</label>
+        <input type="date" name="expiryDate" />
+        <button className="btn btn-danger">Add Item</button>
+      </div> */}
+      <div>
         <h3>Food items that are expiring within 10 days</h3>
         <ul>
           <li>Item01</li>
@@ -173,10 +75,9 @@ const Dashboard = () => {
           <li>Item03</li>
         </ul>
         <button className="btn btn-danger">View More</button>
-      </div> */}
-
-      <Trivia />
-      <div className="trivia">
+      </div>
+      {/* <Trivia /> */}
+      {/* <div>
         <h3>Ask any food related question...</h3>
         <input
           type="text"
@@ -185,8 +86,8 @@ const Dashboard = () => {
           onChange={quesChangeHandler}
         ></input>
         <p>{ans}</p>
-      </div>
-      <IngredientSubstitute />
+      </div> */}
+      {/* <IngredientSubstitute /> */}
 
     </>
   );

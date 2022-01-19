@@ -1,4 +1,45 @@
 const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a - 4c125a07172c45129b5e2b4e707f465f
+const DB_DOMAIN = 'https://reefood-1dc84-default-rtdb.firebaseio.com';
+
+export async function getAllItems() {
+    const response = await fetch(`${DB_DOMAIN}/items.json`);
+    const data = await response.json();
+    
+    if (!response.ok) {
+        throw new Error(data.message || 'Could not fetch quotes.');
+    }
+
+    const loadedItems = [];
+
+    for(const key in data){
+        const itemObj = {
+            id: key,
+            ...data[key]
+        };
+
+        loadedItems.push(itemObj);
+    }
+
+    return loadedItems;
+};
+
+export async function addItem(itemData) {
+    const response = await fetch(`${DB_DOMAIN}/items.json`, {
+        method: 'POST',
+        body: JSON.stringify(itemData),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+
+    const data = await response.json();
+    
+    if (!response.ok) {
+        throw new Error(data.message || 'Could not create quote.');
+    }
+
+    return null;
+};
 
 export async function getAllRecipes() {
     const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=eggs,onions,tomato&number=10&ranking=1&ignorePantry=true&apiKey=4c125a07172c45129b5e2b4e707f465f`);
