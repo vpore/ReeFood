@@ -44,7 +44,7 @@ if(isset($_POST['desc'])){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Travel Form</title>
+  <title>FRIDGE</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normie.css">
 </head>

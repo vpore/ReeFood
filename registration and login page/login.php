@@ -5,7 +5,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: welcome.php");
+    header("location: http://localhost:3000/dashboard");
     exit;
 }
 require_once "config.php";
@@ -50,7 +50,7 @@ if(empty($err))
                             $_SESSION["loggedin"] = true;
 
                             //Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: http://localhost:3000/dashboard");
                             
                         }
                     }
@@ -90,7 +90,7 @@ if(empty($err))
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="registernew.php">Register</a>
+        <a class="nav-link" href="register.php">Register</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="login.php">Login</a>
@@ -122,7 +122,7 @@ if(empty($err))
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary" onclick="welcome.php">Submit</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 
