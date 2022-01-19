@@ -274,6 +274,18 @@ input[type=date] {
 
 .trivia{
     margin: 20px;
+} 
+
+.allItems{
+    margin-left: 50%;
+    margin-top: 3%;
 }
 
-
+.quickAns{
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 100px;
+}
+.quickAns p{
+    margin-left: -20px
+}

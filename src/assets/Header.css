@@ -4,12 +4,14 @@
 	padding: 0;
 	position: relative;
 	width: 100%;
+	z-index: 100;
 }
 #header div {
-	margin: 0 10px;
+	margin: 0 10px; 
 	max-width: 1500px;
 	overflow: hidden;
 	padding: 0;
+	z-index: 100;
 }
 #header div img {
 	float: left;
@@ -22,6 +24,7 @@
     text-decoration: none;
     font-weight: bolder;
     font-size: large;
+	z-index: 100;
 }
 #header div ul {
 	position: absolute;
@@ -30,6 +33,7 @@
 	margin-left: 800px;
 	margin-top: 55px;
 	text-align: center;
+	z-index: 100;
 }
 .navItem {
 	display: inline-block;

@@ -1,5 +1,7 @@
-const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a - 4c125a07172c45129b5e2b4e707f465f
+const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a - 4c125a07172c45129b5e2b4e707f465f - 07ac8d4c16684aec84cd98489780ab44
 const DB_DOMAIN = 'https://reefood-1dc84-default-rtdb.firebaseio.com';
+const k='9b5faa12d2d844a6bc980390131e54a0';
+const API_KEY = `apiKey=${k}`;
 
 export async function getAllItems() {
     const response = await fetch(`${DB_DOMAIN}/items.json`);
@@ -42,7 +44,7 @@ export async function addItem(itemData) {
 };
 
 export async function getAllRecipes(ingredients) {
-    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=${ingredients}&number=10&ranking=1&ignorePantry=true&apiKey=4c125a07172c45129b5e2b4e707f465f`);
+    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=${ingredients}&number=10&ranking=1&ignorePantry=true&${API_KEY}`);
 
     if(!response.ok){
         throw new Error("Could not fetch Data!");
@@ -66,7 +68,7 @@ export async function getAllRecipes(ingredients) {
 }
 
 export async function getSingleRecipe(recipeid) {
-    const response = await fetch(`${API_DOMAIN}/recipes/${recipeid}/information?includeNutrition=false&apiKey=4c125a07172c45129b5e2b4e707f465f`);
+    const response = await fetch(`${API_DOMAIN}/recipes/${recipeid}/information?includeNutrition=false&${API_KEY}`);
     const data = await response.json();
 
     if(!response.ok){
@@ -100,13 +102,13 @@ export async function getSingleRecipe(recipeid) {
 };
 
 export async function getNutritionLabel(recipeid) {
-    const url = `${API_DOMAIN}/recipes/${recipeid}/nutritionLabel.png?showOptionalNutrients=false&showZeroValues=false&showIngredients=false&apiKey=4c125a07172c45129b5e2b4e707f465f`;
+    const url = `${API_DOMAIN}/recipes/${recipeid}/nutritionLabel.png?showOptionalNutrients=false&showZeroValues=false&showIngredients=false&${API_KEY}`;
    
     return url;
 };
 
 export async function getRandomTrivia() {
-    const response = await fetch(`${API_DOMAIN}/food/trivia/random?apiKey=4c125a07172c45129b5e2b4e707f465f`);
+    const response = await fetch(`${API_DOMAIN}/food/trivia/random?${API_KEY}`);
     const data = await response.json();
 
     const trivia = data.text;
@@ -114,7 +116,7 @@ export async function getRandomTrivia() {
 };
 
 export async function getQuickAns(ques) {
-    const response = await fetch(`${API_DOMAIN}/recipes/quickAnswer?q=${ques}&apiKey=4c125a07172c45129b5e2b4e707f465f`);
+    const response = await fetch(`${API_DOMAIN}/recipes/quickAnswer?q=${ques}&${API_KEY}`);
     const data = await response.json();
 
     const ans = data.answer;
@@ -122,7 +124,7 @@ export async function getQuickAns(ques) {
 };
 
 export async function getIngSub(ing) {
-    const response = await fetch(`${API_DOMAIN}/food/ingredients/substitutes?ingredientName=${ing}&apiKey=4c125a07172c45129b5e2b4e707f465f`);
+    const response = await fetch(`${API_DOMAIN}/food/ingredients/substitutes?ingredientName=${ing}&${API_KEY}`);
     const data = await response.json();
     let subsArr = [];
     let allSubs = data.substitutes;

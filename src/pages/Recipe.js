@@ -28,16 +28,17 @@ const Recipe = (props) => {
 
             <Link to={`/recipe/recipeinfo/${eachRecData.id}`} className="recipe">
 
-                {/* <div className="recipeA"> */}
+                <div className="recipeA">
                 <img src={eachRecData.image} alt="Foood" className="img recipe-img" />
                 <h5>{eachRecData.title}</h5>
-                {/* </div> */}
+                </div>
             </Link>
         );
     }
 
     return (
         <>
+        <h1 style={{marginTop: "25px", marginLeft:"25px", fontFamily: "Poppins"}} className="d-flex justify-content-center">Recipes According to Fridge Items</h1>
             <main className="page">
                 <section className="recipes-container">
                     <div className="recipes-list">{recipeTiles}</div>

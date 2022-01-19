@@ -38,6 +38,7 @@ min-height: calc(100vh - (6rem + 4rem));
     display: grid;
     gap: 2rem 1rem;
 }
-/* .recipeA{
-    position: absolute;
-} */
+.recipeA{
+    position: relative;
+    float: left;
+}

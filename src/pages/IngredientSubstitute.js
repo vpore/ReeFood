@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import useHttp from "../hooks/use-http";
 import { getIngSub } from "../lib/api";
+import '../assets/Trivia.css'
 
 const IngredientSubstitute = () => {
 
@@ -28,7 +29,7 @@ const IngredientSubstitute = () => {
 
     return(
         <>
-            <div>
+            <div className="IngSubs">
                 <h3>Get any Ingredient Substitute</h3>
                 <input
                 type="text"

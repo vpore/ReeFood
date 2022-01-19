@@ -56,11 +56,6 @@ function App() {
           <Dashboard/>
         </Route>
 
-        <Route path='/expiry'>
-          <DashHeader/>
-          <Expiry/>
-        </Route>
-
         <Route exact path='/recipe'>
           <DashHeader/>
           <AllRecipes items={loadedItems}/>
@@ -69,11 +64,6 @@ function App() {
         <Route exact path='/recipe/recipeinfo/:recipeid'>
           <DashHeader/>
            <RecipeInfo/>
-        </Route>
-
-        <Route path='/recom'>
-          <DashHeader/>
-          <Recommendations/>
         </Route>
 
       </Switch>

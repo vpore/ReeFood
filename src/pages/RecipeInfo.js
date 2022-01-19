@@ -34,20 +34,22 @@ const RecipeInfo = () => {
     //let speechRecog = window.webkitSpeechRecognition;
     speechRecog.continuous=true;
     speechRecog.interimResults=true;
-    speechRecog.lang = "en";
+    speechRecog.lang = "en";*/
 
-    let speechText = new SpeechSynthesisUtterance();
+    /*let speechText = new SpeechSynthesisUtterance();
     speechText.lang = "en";
-    let i = 0;
     const speekIns = loadedRecipe.instructions.filter(eachIns => {if(typeof eachIns === 'string'){return eachIns}});
     console.log(speekIns);
     const startBtn = () => {
-        speechText.text = speekIns[i];
+        speechText.text = speekIns;
         window.speechSynthesis.speak(speechText);
-        speechRecog.start();
+        //speechRecog.start();
     };
+    const pauseBtn = () => {
+        window.speechSynthesis.cancel();
+    };*/
 
-    var Content = '';
+    /*var Content = '';
 
     speechRecog.continuous = true;
 
@@ -91,16 +93,17 @@ const RecipeInfo = () => {
 
     return(
         <>
-            <h1>{loadedRecipe.title}</h1>
+            <h1 style={{fontFamily: "Raleway", marginTop: "25px", marginLeft: "15px"}}>{loadedRecipe.title}</h1>
             <img src={loadedRecipe.imageSrc} style={{width: "200px", height: "150px"}} alt="Foood"/>
-            <h4>Ingredients</h4>
-            <div>
+            <h4 style={{marginLeft: "15px"}}><strong>Ingredients</strong></h4>
+            <div style={{marginLeft: "15px"}}>
                 {loadedRecipe.ingredients}
             </div>
-            {/* <button onClick={startBtn}>Speakk</button>
-            <button onClick={stopBtn}>Stop </button> */}
-            <h4>Recipe</h4>
-            <div>
+            {/* <button onClick={startBtn} className="btn btn-info">Speakk</button>
+            <button onCLick={pauseBtn} className="btn btn-warning">Pause</button> */}
+            {/* <button onClick={stopBtn}>Stop </button> */}
+            <h4 style={{marginLeft: "15px"}}><strong>Recipe</strong></h4>
+            <div style={{marginLeft: "15px"}}>
                 {loadedRecipe.instructions}
             </div>
             <NutritionLabel/>

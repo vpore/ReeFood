@@ -32,13 +32,8 @@ const FoodItemForm = (props) => {
 
   return (
     <Fragment>
-      <Prompt
-        when={isEntering}
-        message={(location) =>
-          'Are you sure you want to leave? All your entered data will be lost!'
-        }
-      />
-      <Card>
+      
+      
         <form
           onFocus={formFocusedHandler}
           className={classes.form}
@@ -49,20 +44,23 @@ const FoodItemForm = (props) => {
               <LoadingSpinner />
             </div>
           )}
-
+          <h2 className='heading'>Add the food items</h2>
           <div className={classes.control}>
             <label htmlFor='author'>Expiry Date</label>
-            <input type='text' id='author' ref={authorInputRef} />
+            <input type='date' id='author' ref={authorInputRef} />
           </div>
           <div className={classes.control}>
             <label htmlFor='text'>Food Item</label>
             <input type='text' id='text' ref={textInputRef}></input>
           </div>
-          <div className={classes.actions}>
+          <div className={classes.action}>
             <button onClick={finishEnteringHandler} className='btn btn-success'>Add Item</button>
           </div>
         </form>
-      </Card>
+        <a href="http://127.0.0.1:5500/OCR/OCR/Tesseract-OCR/index.html" target={"_blank"}>
+          <button className='btn btn-info' style={{marginTop: "275px", marginLeft: "-90px", position: "absolute"}}>Scan Info</button>
+        </a>
+      
     </Fragment>
   );
 };

@@ -51,35 +51,26 @@ const Dashboard = () => {
         </div>
       </header>
       {/* <h1>Hello!</h1> */}
-
-      <div>
+      <NewItem />
+      <div className="allItems">
         <h3>Items in your Fridge</h3>
         <AllItems />
       </div>
 
-      <NewItem />
-
-      <div>
-        <h3>Food items that are expiring within 10 days</h3>
-        <ul>
-          <li>Item01</li>
-          <li>Item02</li>
-          <li>Item03</li>
-        </ul>
-        <button className="btn btn-danger">View More</button>
-      </div>
-      <Trivia />
-      <div>
+      <div className="quickAns">
         <h3>Ask any food related question...</h3>
         <input
           type="text"
           placeholder="Eg: How much vitamin C is present in Apples?"
           value={enteredQues}
           onChange={quesChangeHandler}
+          style={{width: "110%"}}
         ></input>
         <p>{ans}</p>
       </div>
       <IngredientSubstitute />
+      
+      <Trivia />
 
     </>
   );
