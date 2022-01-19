@@ -57,3 +57,46 @@ export async function getSingleRecipe(recipeid) {
 
     return loadedRecipe;
 };
+
+export async function getNutritionLabel(recipeid) {
+    const url = `${API_DOMAIN}/recipes/${recipeid}/nutritionLabel.png?showOptionalNutrients=false&showZeroValues=false&showIngredients=false&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`;
+   
+    return url;
+};
+
+export async function getRandomTrivia() {
+    const response = await fetch(`${API_DOMAIN}/food/trivia/random?apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const data = await response.json();
+
+    const trivia = data.text;
+    return trivia;
+};
+
+export async function getQuickAns(ques) {
+    const response = await fetch(`${API_DOMAIN}/recipes/quickAnswer?q=${ques}&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const data = await response.json();
+
+    const ans = data.answer;
+    return ans;
+};
+
+export async function getIngSub(ing) {
+    const response = await fetch(`${API_DOMAIN}/food/ingredients/substitutes?ingredientName=${ing}&apiKey=57b8d608a3a44fe0a0bc6b53ea785082`);
+    const data = await response.json();
+    let subsArr = [];
+    let allSubs = data.substitutes;
+    // allSubs.forEach((eachSub) => {
+    //     subsArr.push(eachSub);
+    // });
+    let notFoundMsg='';
+    let message = data.message;
+    if(message === 'Could not find any substitutes for that ingredient.'){
+        notFoundMsg=message
+    }
+
+    const subs = {
+        subIng: allSubs,
+        msg: notFoundMsg
+    }
+    return subs;
+}

@@ -22,7 +22,7 @@ const DashHeader = () => {
                 {/* </a> */}
                 {/* </div> */}
             </div>
-            <ul class="links-container">
+            <ul className="links-container">
                 <NavLink to='/dashboard' className="link-item link">Home</NavLink>
                 <NavLink to='/aboutus' className="link-item link">About Us</NavLink>
                 <NavLink to='/recipe' className="link-item link">Recipies</NavLink>
