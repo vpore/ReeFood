@@ -8,7 +8,6 @@
 #body.home div.header {
 	background-color: #f8f8f8;
 	margin: 0;
-	max-width: none;
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
@@ -16,10 +15,11 @@
 #body.home div.header img {
 	display: block;
 	left: 50%;
-	margin: 0 auto 0 -563px;
+	margin-left: -760px;
 	padding: 0;
 	position: absolute;
-	width: 1126px;
+	width: 100%;
+	height:900px
 }
 #body.home div.header div {
 	margin: 0 auto;
@@ -73,7 +73,7 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
-	width: auto;
+	width: 100%;
 }
 #body.home div.body div div h1 {
 	color: #7A6666;

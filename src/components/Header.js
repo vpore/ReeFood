@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../assets/Header.css";
-import logo from "../images/logo.png";
+import logo from "../images/csilogo.png";
 
 const showLogin = () => {
 
@@ -23,16 +23,18 @@ const Header = () => {
           <NavLink to="/home" className="logo">
             <img src={logo} alt="logo" />
           </NavLink>
-          <button className="btn btn-outline-danger loginBtn">
-            <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php" >
+          
+          <Link target="_blank" to="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php" >
+            <button className="btn btn-outline-danger regiBtn">
               Register
-            </a>
-          </button>
-          <button className="btn btn-outline-danger loginBtn">
-            <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
+            </button>
+          </Link>
+          <Link target="_blank" to="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
+            <button className="btn btn-outline-danger loginBtn">
               LogIn
-            </a>
-          </button>
+            </button>
+          </Link>
+          
         </div>
       </div>
     </>
