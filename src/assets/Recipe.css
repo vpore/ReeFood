@@ -23,7 +23,7 @@ letter-spacing: var(--letterSpacing);
 .recipes-list {
 display: grid;
 gap: 2rem 1rem;
-padding-bottom: 3rem;
+padding-bottom: 3rem;   
 }
 .page {
 width: 90vw;
@@ -38,3 +38,6 @@ min-height: calc(100vh - (6rem + 4rem));
     display: grid;
     gap: 2rem 1rem;
 }
+/* .recipeA{
+    position: absolute;
+} */

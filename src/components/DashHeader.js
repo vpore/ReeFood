@@ -25,10 +25,11 @@ const DashHeader = () => {
             </div>
             <ul className="links-container" style={{ marginBottom: 0 }}>
                 <NavLink to='/dashboard' className="link-item link">Home</NavLink>
-                <NavLink to='/aboutus' className="link-item link">About Us</NavLink>
+                {/* <NavLink to='/aboutus' className="link-item link">About Us</NavLink> */}
                 <NavLink to='/recipe' className="link-item link">Recipes</NavLink>
+                <NavLink to='/recipe' className="link-item link">Fridge Items List</NavLink>
                 {/* <NavLink to='/expiry' className="link-item link">Items approaching Expiry</NavLink> */}
-                <NavLink to='/feedback' className="link-item link">Feedback</NavLink>
+                {/* <NavLink to='/feedback' className="link-item link">Feedback</NavLink> */}
                 <NavLink to='/recommendations' className="link-item link">Recommendations</NavLink>
 
 
