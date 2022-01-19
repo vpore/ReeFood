@@ -31,6 +31,7 @@ const DashHeader = () => {
                 <NavLink to='/feedback' className="link-item link">Feedback</NavLink>
                 <NavLink to='/recommendations' className="link-item link">Recommendations</NavLink>
                 
+            <a className="nav-link" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/logout.php">Logout</a>
             </ul>
         </nav>
     );

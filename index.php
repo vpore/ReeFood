@@ -37,7 +37,6 @@ if(isset($_POST['desc'])){
     $con->close();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,10 +54,10 @@ if(isset($_POST['desc'])){
     <h1>Enter your items as shown in the below example</h1>
     <img src="image.jpg" class="img">
 
-    <?php
-        if($insert == true){
-        echo "<p class='submitMsg'>Your item was added</p>";
-        }
+
+    <?php if($insert == true){
+      echo "<p class='submitMsg'>Your item was added</p>";
+      }
     ?>
     <form action="index.php" method="post">
       Enter your username
