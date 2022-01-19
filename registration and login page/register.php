@@ -73,7 +73,7 @@ if(empty($username_err) && empty($password_err) && empty($confirm_password_err))
         // Try to execute the query
         if (mysqli_stmt_execute($stmt))
         {
-            header("location: login.php");
+            header("location: http://localhost:3000/dashboard");
         }
         else{
             echo "Something went wrong... cannot redirect!";
@@ -114,11 +114,11 @@ mysqli_close($conn);
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="register.php">Register</a>
-      </li>
-      <li class="nav-item">
+      </li> -->
+       <li class="nav-item">
         <a class="nav-link" href="login.php">Login</a>
-      </li>
-      <li class="nav-item">
+      </li> 
+     <!-- <li class="nav-item">
         <a class="nav-link" href="logout.php">Logout</a>
       </li> -->
 

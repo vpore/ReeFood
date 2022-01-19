@@ -23,18 +23,18 @@ const Header = () => {
           <NavLink to="/home" className="logo">
             <img src={logo} alt="logo" />
           </NavLink>
-          
-          <Link target="_blank" to="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php" >
+
+          <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php" >
             <button className="btn btn-outline-danger regiBtn">
               Register
             </button>
-          </Link>
-          <Link target="_blank" to="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
+          </a>
+          <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
             <button className="btn btn-outline-danger loginBtn">
               LogIn
             </button>
-          </Link>
-          
+          </a>
+
         </div>
       </div>
     </>

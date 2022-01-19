@@ -9,7 +9,7 @@ const DashHeader = () => {
         <nav className="navbar">
             <div className="nav">
                 <img src={logo} className="brand-logo" alt=""></img>
-                <a className="logoutBtn btn btn-outline-success" href="http://localhost:3000/home">Logout</a>
+                <a className="logoutBtn btn btn-outline-success" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php">Logout</a>
                 {/* <div className="nav-items"> */}
                 {/* for Recipies page search bar  */}
                 {/* <div className="search">
