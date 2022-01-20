@@ -1,6 +1,6 @@
 const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a - 4c125a07172c45129b5e2b4e707f465f - 07ac8d4c16684aec84cd98489780ab44
 const DB_DOMAIN = 'https://reefood-1dc84-default-rtdb.firebaseio.com';
-const k='9b5faa12d2d844a6bc980390131e54a0';
+const k='57b8d608a3a44fe0a0bc6b53ea785082';
 const API_KEY = `apiKey=${k}`;
 
 export async function getAllItems() {
