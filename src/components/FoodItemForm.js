@@ -32,35 +32,35 @@ const FoodItemForm = (props) => {
 
   return (
     <Fragment>
-      
-      
-        <form
-          onFocus={formFocusedHandler}
-          className={classes.form}
-          onSubmit={submitFormHandler}
-        >
-          {props.isLoading && (
-            <div className={classes.loading}>
-              <LoadingSpinner />
-            </div>
-          )}
-          <h2 className='heading'>Add the food items</h2>
-          <div className={classes.control}>
-            <label htmlFor='author'>Expiry Date</label>
-            <input type='date' id='author' ref={authorInputRef} />
+
+
+      <form
+        onFocus={formFocusedHandler}
+        className={classes.form}
+        onSubmit={submitFormHandler}
+      >
+        {props.isLoading && (
+          <div className={classes.loading}>
+            <LoadingSpinner />
           </div>
-          <div className={classes.control}>
-            <label htmlFor='text'>Food Item</label>
-            <input type='text' id='text' ref={textInputRef}></input>
-          </div>
-          <div className={classes.action}>
-            <button onClick={finishEnteringHandler} className='btn btn-success'>Add Item</button>
-          </div>
-        </form>
-        <a href="http://127.0.0.1:5500/OCR/OCR/Tesseract-OCR/index.html" target={"_blank"}>
-          <button className='btn btn-info' style={{marginTop: "275px", marginLeft: "-90px", position: "absolute"}}>Scan Info</button>
-        </a>
-      
+        )}
+        <h2 className='heading'>Add the food items</h2>
+        <div className={classes.control}>
+          <label htmlFor='author'>Expiry Date</label>
+          <input type='date' id='author' ref={authorInputRef} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor='text'>Food Item</label>
+          <input type='text' id='text' ref={textInputRef}></input>
+        </div>
+        <div className={classes.action}>
+          <button onClick={finishEnteringHandler} className='btn btn-success'>Add Item</button>
+        </div>
+      </form>
+      <a href="http://localhost/CSI_RUBIX_/Github_folder/OCR/OCR/Tesseract-OCR/index.html" target={"_blank"}>
+        <button className='btn btn-info' style={{ marginTop: "275px", marginLeft: "-90px", position: "absolute" }}>Scan Info</button>
+      </a>
+
     </Fragment>
   );
 };
