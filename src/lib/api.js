@@ -1,6 +1,6 @@
 const API_DOMAIN = 'https://api.spoonacular.com'; //57b8d608a3a44fe0a0bc6b53ea785082 - 021f5840660c411aa1cb7aa4882d976a - 4c125a07172c45129b5e2b4e707f465f - 07ac8d4c16684aec84cd98489780ab44
 const DB_DOMAIN = 'https://reefood-1dc84-default-rtdb.firebaseio.com';
-const k='57b8d608a3a44fe0a0bc6b53ea785082';
+const k='07ac8d4c16684aec84cd98489780ab44';
 const API_KEY = `apiKey=${k}`;
 
 export async function getAllItems() {
@@ -44,7 +44,7 @@ export async function addItem(itemData) {
 };
 
 export async function getAllRecipes(ingredients) {
-    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=${ingredients}&number=10&ranking=1&ignorePantry=true&${API_KEY}`);
+    const response = await fetch(`${API_DOMAIN}/recipes/findByIngredients?ingredients=${ingredients}&number=12&ranking=1&ignorePantry=true&${API_KEY}`);
 
     if(!response.ok){
         throw new Error("Could not fetch Data!");
@@ -77,6 +77,7 @@ export async function getSingleRecipe(recipeid) {
 
     let ingredientsArr = [];
     let instructionsArr = [];
+    let equipmentArr = [];
 
     let detailedIngr = data.extendedIngredients;
     detailedIngr.forEach(eachIngr => {
@@ -86,8 +87,20 @@ export async function getSingleRecipe(recipeid) {
 
     let detailedInst = data.analyzedInstructions[0].steps;
     detailedInst.forEach(eachInst => {
-        instructionsArr.push(eachInst.step);
-        instructionsArr.push(<br/>);
+        instructionsArr.push(
+            <div>
+                {eachInst.step}
+                <br/>
+            </div>
+        );
+    });
+
+    let detailedEquipment = data.analyzedInstructions[0].steps;
+    detailedEquipment.forEach(eachEq => {
+        eachEq.equipment.forEach(eachEquipment => {
+            equipmentArr.push(eachEquipment.name);
+            equipmentArr.push(<br/>);
+        });
     });
     
     const loadedRecipe = {
@@ -95,7 +108,10 @@ export async function getSingleRecipe(recipeid) {
         title: data.title,
         imageSrc: data.image,
         ingredients: ingredientsArr,
-        instructions: instructionsArr
+        instructions: instructionsArr,
+        equipments: equipmentArr,
+        servings: data.servings,
+        time: data.readyInMinutes
     }
 
     return loadedRecipe;

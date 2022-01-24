@@ -1,10 +1,8 @@
 .recipe {
     display: block;
 }
-img {
-height: 15rem;
-border-radius: var(--borderRadius);
-margin-bottom: 1rem;
+.recipe-img {
+    border-radius: 10px;
 }
 .recipe h5 {
 margin-bottom: 0; 
@@ -42,3 +40,37 @@ min-height: calc(100vh - (6rem + 4rem));
     position: relative;
     float: left;
 }
+.ing{
+    width: 100px
+}
+#nutri{
+    cursor: pointer;
+}
+#label{
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }

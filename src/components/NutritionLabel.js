@@ -28,7 +28,7 @@ const NutritionLabel = () => {
         return <h1>Error Occured:(</h1>
     }
 
-    return <img src={`${url}`} style={{width: "300px", height: "500px", marginTop: "25px", marginLeft: "25px"}}/>
+    return <img src={`${url}`} className="animate" style={{marginLeft: "600px", borderRadius: "30px"}}/>
 };
 
 export default NutritionLabel;
