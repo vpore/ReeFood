@@ -3,6 +3,7 @@ import '../assets/Recipe.css';
 import useHttp from '../hooks/use-http';
 import { getAllRecipes } from '../lib/api';
 import { useEffect } from "react";
+import LoadingSpinner from "../UI/LoadingSpinner";
 
 const Recipe = (props) => {
 
@@ -18,7 +19,9 @@ const Recipe = (props) => {
 
     if (status === 'pending') {
         return (
-            <h1>Loading...</h1>
+            <div className="centered">
+                <LoadingSpinner/>
+            </div>
         );
     }
 
@@ -36,7 +39,14 @@ const Recipe = (props) => {
 
     return (
         <>
-            <h1 style={{marginTop: "25px", marginLeft:"25px", fontFamily: "Poppins"}} className="d-flex justify-content-center">Recipes According to Fridge Items</h1>
+            <h1 style={{marginTop: "25px", marginLeft:"25px", fontFamily: "Poppins"}} className="d-flex justify-content-center">Recommended Recipes</h1>
+            <div className="text-center">  
+                <div className="search">
+                        <input type="text" className="search-box" placeholder="search items , recipes , and many more..."></input>
+                        <button className="search-btn">search</button>
+                </div>
+            </div>
+            
             <div className="row ms-3 mt-5">
                 {recipeTiles}
             </div>
