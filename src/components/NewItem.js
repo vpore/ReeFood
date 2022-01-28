@@ -19,7 +19,7 @@ const NewItem = () => {
     sendRequest(itemData);
   };
 
-  return <FoodItemForm isLoading={status === 'pending'}  onAddQuote={addItemHandler} />;
+  return <FoodItemForm isLoading={status === 'pending'}  onAddItem={addItemHandler} />;
 };
 
 export default NewItem;

@@ -19,7 +19,7 @@ const FoodItemForm = (props) => {
 
     // optional: Could validate here
 
-    props.onAddQuote({ expiry: enteredAuthor, foodItem: enteredText });
+    props.onAddItem({ expiry: enteredAuthor, foodItem: enteredText });
   }
 
   const finishEnteringHandler = () => {

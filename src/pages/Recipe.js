@@ -19,9 +19,8 @@ const Recipe = (props) => {
 
     if (status === 'pending') {
         return (
-            <div className="centered">
                 <LoadingSpinner/>
-            </div>
+            
         );
     }
 

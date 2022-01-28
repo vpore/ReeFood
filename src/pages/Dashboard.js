@@ -41,16 +41,17 @@ const Dashboard = () => {
 
   return (
     <>
-      {/* <!-- hero section-- > */}
+      {/* <!-- hero section-- >
       <header className="hero-section">
         <div className="content">
-          {/* <img src="/logo.jpeg" classNameName="logo" alt=""></img> */}
+          <img src="/logo.jpeg" classNameName="logo" alt=""></img>
           <p className="heading">Eat.Think.Safe</p>
-          {/* <br> */}
+          <br>
           <p className="sub-heading">Eat Everything You Buy</p>
         </div>
       </header>
-      {/* <h1>Hello!</h1> */}
+      <h1>Hello!</h1> */}
+
       <NewItem />
       <div className="allItems">
         <h3>Items in your Fridge</h3>
