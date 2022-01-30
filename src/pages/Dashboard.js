@@ -23,7 +23,7 @@ const Dashboard = () => {
   const { sendRequest, status, data: ans, error } = useHttp(
     getQuickAns,
     true
-  );
+  ); 
 
   useEffect(() => {
     sendRequest(ques);

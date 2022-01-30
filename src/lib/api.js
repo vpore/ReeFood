@@ -67,6 +67,8 @@ export async function getAllRecipes(ingredients) {
     return loadedAllRecipes;
 }
 
+
+
 export async function getSingleRecipe(recipeid) {
     const response = await fetch(`${API_DOMAIN}/recipes/${recipeid}/information?includeNutrition=false&${API_KEY}`);
     const data = await response.json();

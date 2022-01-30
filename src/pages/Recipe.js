@@ -2,12 +2,20 @@ import { Link } from "react-router-dom";
 import '../assets/Recipe.css';
 import useHttp from '../hooks/use-http';
 import { getAllRecipes } from '../lib/api';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LoadingSpinner from "../UI/LoadingSpinner";
+import SearchBar from "../components/SearchBar";
 
 const Recipe = (props) => {
 
-    const ingredients = props.items;
+    var ingredients;
+    ingredients = props.items;
+
+    const SearchHandler = (enteredIngr) => {
+        ingredients = enteredIngr;
+        console.log(ingredients);
+    };
+
     const { sendRequest, status, data: loadedAllRecipes, error } = useHttp(
         getAllRecipes,
         true
@@ -18,9 +26,8 @@ const Recipe = (props) => {
     }, [sendRequest, ingredients]);
 
     if (status === 'pending') {
-        return (
-                <LoadingSpinner/>
-            
+        return(
+            <LoadingSpinner />
         );
     }
 
@@ -39,13 +46,7 @@ const Recipe = (props) => {
     return (
         <>
             <h1 style={{marginTop: "25px", marginLeft:"25px", fontFamily: "Poppins"}} className="d-flex justify-content-center">Recommended Recipes</h1>
-            <div className="text-center">  
-                <div className="search">
-                        <input type="text" className="search-box" placeholder="search items , recipes , and many more..."></input>
-                        <button className="search-btn">search</button>
-                </div>
-            </div>
-            
+            <SearchBar onSearch={SearchHandler}/>
             <div className="row ms-3 mt-5">
                 {recipeTiles}
             </div>

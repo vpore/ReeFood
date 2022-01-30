@@ -34,7 +34,7 @@ function useHttp(requestFunction, startWithPending = false) {
     data: null,
     error: null,
   });
- 
+
   const sendRequest = useCallback(
     async function (requestData) {
       dispatch({ type: 'SEND' });

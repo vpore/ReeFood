@@ -4,7 +4,7 @@ import { Prompt } from 'react-router-dom';
 import Card from '../UI/Card';
 import LoadingSpinner from '../UI/LoadingSpinner';
 import classes from '../assets/FoodItemForm.module.css';
-
+ 
 const FoodItemForm = (props) => {
   const [isEntering, setIsEntering] = useState(false);
 
