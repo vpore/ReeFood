@@ -37,7 +37,7 @@ const Recipe = (props) => {
             <div className="col shadow p-3 mb-5 me-3 bg-white rounded text-center" style={{width: "290px"}}>
             <img src={eachRecData.image} alt="Foood" className="img recipe-img" />
                 <Link to={`/recipe/recipeinfo/${eachRecData.id}`} className="recipe mt-2">
-                        <samp>{eachRecData.title}</samp>
+                    <samp>{eachRecData.title}</samp>
                 </Link>
             </div>
         );

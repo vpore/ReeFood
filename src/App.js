@@ -63,7 +63,7 @@ function App() {
 
         <Route exact path='/recipe/recipeinfo/:recipeid'>
           <DashHeader/>
-           <RecipeInfo/>
+          <RecipeInfo/>
         </Route>
 
       </Switch>
