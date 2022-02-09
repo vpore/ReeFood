@@ -8,7 +8,7 @@ const DashHeader = () => {
     return (
         <nav className="navbar">
             <div className="nav">
-                <img src={logo} className="brand-logo" alt=""></img>
+                <img src={logo} className="brand-logo mb-3" alt=""></img>
                 <a className="logoutBtn btn btn-outline-success" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/register.php">Logout</a>
                 {/* <div className="nav-items"> */}
                 {/* for Recipies page search bar  */}
@@ -24,9 +24,9 @@ const DashHeader = () => {
                 {/* </div> */}
             </div>
             <ul className="links-container" style={{ marginBottom: 0 }}>
-                <NavLink to='/dashboard' className="link-item link">Home</NavLink>
+                <NavLink to='/dashboard' aria-current="page" className="link-item link">Home</NavLink>
                 {/* <NavLink to='/aboutus' className="link-item link">About Us</NavLink> */}
-                <NavLink to='/recipe' className="link-item link">Recipes</NavLink>
+                <NavLink to='/recipe' aria-current="page" className="link-item link">Recipes</NavLink>
                 {/* <NavLink to='/expiry' className="link-item link">Items approaching Expiry</NavLink> */}
                 {/* <NavLink to='/feedback' className="link-item link">Feedback</NavLink> */}
 

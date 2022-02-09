@@ -6,6 +6,9 @@
 	width: 100%;
 	z-index: 100;
 }
+.active{
+    font-weight: 500;
+}
 #header div {
 	margin: 0 10px; 
 	max-width: 1500px;
@@ -53,15 +56,8 @@
     text-decoration: none;
 	cursor: pointer;
 }
-.navItem:active{
-	color: #cb3362;
-}
-.navItem:hover, #header div ul li.menu:hover ul li a {
-	color: #c8c10d;
-}
 #header div ul li.menu {
 	min-height: 35px;
-	z-index: 80;
 }
 #header div ul li.menu ul {
 	display: block;

@@ -8,12 +8,10 @@ import SearchBar from "../components/SearchBar";
 
 const Recipe = (props) => {
 
-    var ingredients;
-    ingredients = props.items;
+    const [ingredients, setIngredients] = useState(props.items);
 
     const SearchHandler = (enteredIngr) => {
-        ingredients = enteredIngr;
-        console.log(ingredients);
+        setIngredients(enteredIngr);
     };
 
     const { sendRequest, status, data: loadedAllRecipes, error } = useHttp(
