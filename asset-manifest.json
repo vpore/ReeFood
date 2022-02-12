@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ReeFood/static/css/main.e1dba8f5.css",
+    "main.js": "/ReeFood/static/js/main.28651015.js",
+    "static/js/787.f71b0918.chunk.js": "/ReeFood/static/js/787.f71b0918.chunk.js",
+    "static/media/spinach.jpg": "/ReeFood/static/media/spinach.35321b51cbcf2ed62e68.jpg",
+    "static/media/homebg.jpg": "/ReeFood/static/media/homebg.90fc24a36abfd5b35695.jpg",
+    "static/media/eggs.jpg": "/ReeFood/static/media/eggs.b045039b78b4bd8d9f71.jpg",
+    "static/media/cauliflower.jpg": "/ReeFood/static/media/cauliflower.733ee97a4e87bd4d3c5a.jpg",
+    "static/media/paneer.jpg": "/ReeFood/static/media/paneer.d13390fa28b31f61461c.jpg",
+    "static/media/curd.jpg": "/ReeFood/static/media/curd.e32812c7ce214a72e646.jpg",
+    "static/media/capsicum.jpg": "/ReeFood/static/media/capsicum.0a100dbe713acd592a29.jpg",
+    "static/media/yogurt.jpg": "/ReeFood/static/media/yogurt.cf7e9b6d7950684e4918.jpg",
+    "static/media/csilogo.png": "/ReeFood/static/media/csilogo.bef14dcd1a9abd18d2c7.png",
+    "static/media/icons.png": "/ReeFood/static/media/icons.d0f0e3ed2da7a8d87e64.png",
+    "index.html": "/ReeFood/index.html",
+    "main.e1dba8f5.css.map": "/ReeFood/static/css/main.e1dba8f5.css.map",
+    "main.28651015.js.map": "/ReeFood/static/js/main.28651015.js.map",
+    "787.f71b0918.chunk.js.map": "/ReeFood/static/js/787.f71b0918.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1dba8f5.css",
+    "static/js/main.28651015.js"
+  ]
+}
