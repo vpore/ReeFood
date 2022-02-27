@@ -43,10 +43,10 @@ function App() {
 
         <Route exact path='/'>
           <Header/>
-          <Redirect to="/home"/>
+          <Redirect to="/ReeFood"/>
         </Route>
         
-        <Route path="/home">
+        <Route path="/ReeFood">
           <Header/>
           <Home/>
         </Route>

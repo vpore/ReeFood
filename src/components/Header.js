@@ -15,11 +15,11 @@ const Header = () => {
               Register
             </button>
           </a>
-          <a target="_blank" href="http://localhost/CSI_RUBIX_/Github_folder/registration%20and%20login%20page/login.php" >
+          <NavLink to='/dashboard' >
             <button className="btn btn-outline-danger loginBtn">
               LogIn
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
