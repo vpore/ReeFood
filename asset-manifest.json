@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReeFood/static/css/main.e1dba8f5.css",
-    "main.js": "/ReeFood/static/js/main.1a4cf478.js",
+    "main.css": "/ReeFood/static/css/main.f43c999e.css",
+    "main.js": "/ReeFood/static/js/main.54c6001a.js",
     "static/js/787.f71b0918.chunk.js": "/ReeFood/static/js/787.f71b0918.chunk.js",
     "static/media/spinach.jpg": "/ReeFood/static/media/spinach.35321b51cbcf2ed62e68.jpg",
     "static/media/homebg.jpg": "/ReeFood/static/media/homebg.90fc24a36abfd5b35695.jpg",
@@ -14,12 +14,12 @@
     "static/media/csilogo.png": "/ReeFood/static/media/csilogo.bef14dcd1a9abd18d2c7.png",
     "static/media/icons.png": "/ReeFood/static/media/icons.d0f0e3ed2da7a8d87e64.png",
     "index.html": "/ReeFood/index.html",
-    "main.e1dba8f5.css.map": "/ReeFood/static/css/main.e1dba8f5.css.map",
-    "main.1a4cf478.js.map": "/ReeFood/static/js/main.1a4cf478.js.map",
+    "main.f43c999e.css.map": "/ReeFood/static/css/main.f43c999e.css.map",
+    "main.54c6001a.js.map": "/ReeFood/static/js/main.54c6001a.js.map",
     "787.f71b0918.chunk.js.map": "/ReeFood/static/js/787.f71b0918.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1dba8f5.css",
-    "static/js/main.1a4cf478.js"
+    "static/css/main.f43c999e.css",
+    "static/js/main.54c6001a.js"
   ]
 }
